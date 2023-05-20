@@ -1,0 +1,126 @@
+// For Highlighter 
+{
+    "workbench.colorTheme": "Monokai Pro",
+    "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.rulers": [80],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false
+    },
+    "files.autoSave": "onFocusChange",
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "git.autofetch": true,
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "highlight.regexes": {
+      "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+        "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+        "decorations": [
+          {
+            "overviewRulerColor": "#ffcc00",
+            "backgroundColor": "#ffcc00",
+            "color": "#1f1f1f",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#ffcc00",
+            "color": "#1f1f1f"
+          }
+        ]
+      },
+      "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+        "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+        "decorations": [
+          {
+            "overviewRulerColor": "#cc0000",
+            "backgroundColor": "#cc0000",
+            "color": "#1f1f1f",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#cc0000",
+            "color": "#1f1f1f"
+          }
+        ]
+      },
+      "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+        "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+        "decorations": [
+          {
+            "overviewRulerColor": "#00ccff",
+            "backgroundColor": "#00ccff",
+            "color": "#1f1f1f",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#00ccff",
+            "color": "#1f1f1f"
+          }
+        ]
+      },
+      "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+        "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+        "decorations": [
+          {
+            "overviewRulerColor": "#cc00cc",
+            "backgroundColor": "#cc00cc",
+            "color": "#1f1f1f",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#cc00cc",
+            "color": "#1f1f1f"
+          }
+        ]
+      },
+      "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *imp(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+        "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+        "decorations": [
+          {
+            "overviewRulerColor": "#7fff00",
+            "backgroundColor": "#7fff00",
+            "color": "#1f1f1f",
+            "fontWeight": "bold"
+          },
+          {
+            "backgroundColor": "#7fff00",
+            "color": "#1f1f1f"
+          }
+        ]
+      }
+    },
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "highlight.decorations": {
+      "rangeBehavior": 3
+    },
+    "[css]": {
+      "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "color-highlight.languages": [
+    
+    "*"],
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/_output/**",
+      "**/*.min.*",
+      "**/*.map",
+      "**/.next/**"
+    ],
+    "git.openRepositoryInParentFolders": "never"
+  }
+  
