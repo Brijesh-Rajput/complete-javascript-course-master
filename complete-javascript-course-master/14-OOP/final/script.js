@@ -100,11 +100,12 @@ DATA CAR 2: 'Mercedes' going at 95 km/h
 GOOD LUCK 😀
 */
 
-/*
+
 const Car = function (make, speed) {
   this.make = make;
   this.speed = speed;
 };
+
 
 Car.prototype.accelerate = function () {
   this.speed += 10;
@@ -124,6 +125,8 @@ bmw.accelerate();
 bmw.brake();
 bmw.accelerate();
 
+// @me:- 
+console.log(bmw.__proto__ === Car.prototype, bmw.__proto__.__proto__ === Function.prototype, bmw.__proto__.__proto__ === Object.prototype, Object.prototype.__proto__);
 
 ///////////////////////////////////////
 // ES6 Classes
@@ -206,7 +209,7 @@ const account = {
 
 console.log(account.latest);
 
-account.latest = 50;
+account.latest = 50; //todo: What if i want to pass multiple arguments in this latest property ? then what will be the syntax ?
 console.log(account.movements);
 
 
@@ -234,7 +237,7 @@ console.log(steven.__proto__ === PersonProto);
 const sarah = Object.create(PersonProto);
 sarah.init('Sarah', 1979);
 sarah.calcAge();
-*/
+
 
 ///////////////////////////////////////
 // Coding Challenge #2
