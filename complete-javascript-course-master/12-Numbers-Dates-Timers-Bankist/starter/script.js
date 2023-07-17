@@ -251,3 +251,55 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+// =================================================== Converting and checking Numbers ===================================================
+// In js, All numbers are represented internally as floating point numbers{always as decimal}.
+console.log(23 === 23.0); //true  ====> That's the reason why we only have one data type for all numbers.
+// Numbers are represented internally in a 64base2 format. i.e. numbers are always store in a binary format. They are only composed of 0's and 1's.
+console.log(0.1 + 0.2); //0.30000000000000004
+console.log(3/10); //0.3
+console.log(0.1 + 0.2 === 0.3); //false
+
+// string to numbers 
+console.log(Number('23')); //23
+console.log(+'23'); //23  ==> //imp: This works b'coz: when Js sees the + oprtr it will do type-cohercion. so, it will automatically convert all the operands to numbers.
+
+// Parsinng: Parse a number from a string  ===> It's like a type cohercion 
+console.log(Number.parseInt("30px")); //30  //NOTE:- In order to this should work :- string should start from a number.
+console.log(Number.parseInt("2456$y85")); //2456
+console.log(Number.parseInt('e23')); //Nan
+// 2nd argument of parseInt is radix ---> which tells which number sytem we are using like base10,etc... {bydefault base is 10}
+console.log(Number.parseInt("30px",10));
+// console.log(Number.parseInt("30",2));
+
+console.log(Number.parseFloat("567.87px")); //567.87
+console.log(Number.parseInt('  2.5rem  ')); //2
+console.log(Number.parseFloat('  2.5rem  ')); //2.5
+
+// parseInt() and parseFloat() is a global function
+console.log(parseFloat('  2.5  rem  '));//2.5
+
+console.log(Number.isNaN(20));//false //It is used to check if any value is an number
+console.log(Number.isNaN('20'));//false
+console.log(+'20x');
+console.log(Number.isNaN(+'20x')); //true ==> true means it is NaN which is passed as a parameter in isNaN() method.
+console.log(23/0); 
+console.log(Number.isNaN(23/0)); //false   
+
+
+// therefore, we have isfinite() method b'coz:- in .isNaN() method 23/0 is consider as Number which is infinity.
+// checking if value is number.
+console.log("-------------- isFinite() ---------------");
+console.log(Number.isFinite(20)); // true
+console.log(Number.isFinite("20")); //false
+console.log(Number.isFinite(+"20X")); //false
+console.log("Hello ",Number.isFinite(20/3)); //true
+
+console.log(Math.max(5, 18, '23', 11, 2)); //type coercion is happening that's why it is working.
+
+
+
+
+
+
+
