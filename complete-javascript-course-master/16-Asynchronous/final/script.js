@@ -70,6 +70,9 @@ const getCountryData = function (country) {
 getCountryData('portugal');
 getCountryData('usa');
 getCountryData('germany');
+// 👆 3 AJAX call is happening here.
+//imp: me:- The above 3 call is happening async at the same time so, the order of output can differ. Data arrives slightly different each time when we load the page. This shows Non-blocking code behaviour.
+// todo: If we actually wanted that this above 3 AJAX call request to be made in a specific order like pre-define order then we have to chain the request. which means to make the 2nd request only after the 1st request as finished. We will do this in next section ===> Which we developer called as "Callback Hell" 
 */
 
 ///////////////////////////////////////
